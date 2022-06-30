@@ -3,6 +3,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const { version } = require('../package.json');
+const { getPWAConfig } = require('../site/config/pwa');
 
 // 组件 dist 打包
 exports.component = (config) => {
@@ -27,7 +28,8 @@ exports.icon = (config) => {
 
 // 官网
 exports.site = (config, env) => {
-  if (env === 'prod') {
+  const isProd = env === 'prod';
+  if (isProd) {
     config.output.publicPath = '/';
   }
 
@@ -87,4 +89,6 @@ exports.site = (config, env) => {
       ],
     };
   }
+
+  getPWAConfig(config, env);
 };

@@ -17,14 +17,13 @@
     />
     <meta property="og:image:width" content="640" />
     <meta property="og:image:height" content="640" />
+    <link rel="manifest" href="manifest.json" />
     <script src="https://unpkg.byted-static.com/latest/byted/arco-config/index.js"></script>
 
     <script>
       const VERSION = '2.23.2';
       window.CODEPEN_ENABLE = true;
-      window.CODEPEN_CSS_EXTERNAL = [
-        'https://unpkg.com/@arco-design/web-react/dist/css/arco.css',
-      ];
+      window.CODEPEN_CSS_EXTERNAL = ['https://unpkg.com/@arco-design/web-react/dist/css/arco.css'];
       window.CODEPEN_JS_EXTERNAL = [
         'https://unpkg.com/react@16.x/umd/react.development.js',
         'https://unpkg.com/react-dom@16.x/umd/react-dom.development.js',
@@ -35,19 +34,22 @@
     </script>
 
     <script>
-      (function(win, export_obj) {
-          win['TeaAnalyticsObject'] = export_obj;
-          if (!win[export_obj]) {
-              function _collect() {
-                  _collect.q.push(arguments);
-              }
-              _collect.q = _collect.q || [];
-              win[export_obj] = _collect;
+      (function (win, export_obj) {
+        win['TeaAnalyticsObject'] = export_obj;
+        if (!win[export_obj]) {
+          function _collect() {
+            _collect.q.push(arguments);
           }
-          win[export_obj].l = +new Date();
+          _collect.q = _collect.q || [];
+          win[export_obj] = _collect;
+        }
+        win[export_obj].l = +new Date();
       })(window, 'collectEvent');
     </script>
-    <script async src="https://lf3-cdn-tos.bytescm.com/obj/static/log-sdk/collect/collect-autotrack.js"></script>
+    <script
+      async
+      src="https://lf3-cdn-tos.bytescm.com/obj/static/log-sdk/collect/collect-autotrack.js"
+    ></script>
   </head>
   <body>
     <!-- <script src="https://unpkg.com/dayjs@1.x/dayjs.min.js"></script>

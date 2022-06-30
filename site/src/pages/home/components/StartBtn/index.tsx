@@ -1,5 +1,6 @@
 import React, { CSSProperties } from 'react';
 import { Button } from '@arco-design/web-react';
+import { Link } from 'react-router-dom';
 import cs from '../../utils/classNames';
 import styles from './style/index.module.less';
 import useLocale from '../../hooks/useLocale';
@@ -18,7 +19,6 @@ export default function StartBtn(props: StartBtnProps) {
   return (
     <Button
       type="primary"
-      href={linkDocsArcoComponent}
       className={classNames}
       style={style}
       onClick={() => {
@@ -30,8 +30,10 @@ export default function StartBtn(props: StartBtnProps) {
           });
       }}
     >
-      <span className={styles['start-btn-icon']} />
-      {locale['startBtn.text']}
+      <Link to={linkDocsArcoComponent}>
+        <span className={styles['start-btn-icon']} />
+        {locale['startBtn.text']}
+      </Link>
     </Button>
   );
 }
