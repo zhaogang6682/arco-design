@@ -325,14 +325,6 @@
     csstype "^3.0.8"
     tslib "^2.0.3"
 
-"@arco-design/arco-site-utils@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/@arco-design/arco-site-utils/-/arco-site-utils-1.0.2.tgz#8e8e2a4ba9c480951afe68ae5b44e149f5ebe52b"
-  integrity sha512-Cta5QmYLW4+//hQG6SheGQLpagbCfwwW/niolKrhqIy0Vq1gVJJxtBQdWv3hV8WcNrPott9jpcZdHhcTRymLDQ==
-  dependencies:
-    axios "^0.24.0"
-    lodash.throttle "^4.1.1"
-
 "@arco-design/color@^0.4.0":
   version "0.4.0"
   resolved "https://registry.npmjs.org/@arco-design/color/-/color-0.4.0.tgz#52ddb40d318ee6df1057ca8c653cc1675023928f"
@@ -359,10 +351,10 @@
     scroll-into-view-if-needed "2.2.20"
     shallowequal "^1.1.0"
 
-"@arco-materials/site-footer@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@arco-materials/site-footer/-/site-footer-1.1.0.tgz#1720a446199ee0cd12650d65b45c5483923eba7e"
-  integrity sha512-0gNyVTDdMsAU7wRtuPQ129E3uTYiUL+88OMOa8o3wcoJx02NnjY4eyxJDiG7eRlRYSlAYYUJn8d6YeD5HXUM1Q==
+"@arco-materials/site-footer@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/@arco-materials/site-footer/-/site-footer-1.2.0.tgz#4fe35ade4029a3102f8de2e62bdf5ea28228785a"
+  integrity sha512-0wu7go1uSxviNqq0Nw+QZijY8usdD4qhv2PxVJHcSvX6fJLDSgnk6Z02BO+j6sIC4PvpwyXFvokzmKuhQzAoyg==
   dependencies:
     classnames "^2.2.6"
 
